@@ -9,6 +9,8 @@ import Register from './components/Register.jsx'
 import Login from './components/Login.jsx'
 import DashBoard from './components/DashBoard.jsx'
 import './style.css'
+import AddLoan from './components/AddLoan.jsx'
+import MyLoans from './components/MyLoans.jsx'
 const base = import.meta.env.VITE_BASE_URL || '/'
 
 
@@ -25,6 +27,8 @@ function App() {
                 <Route path="/add_book" element={<Template userT={userT} page="Ajout d'un livre"><AddBook /></Template>} />
                 <Route path="/book/:bookId" element={<Template userT={userT} page="Détail du livre"><BookDetails /></Template>} />
                 <Route path="/edit_book/:bookId" element={<Template userT={userT} page="Édition du livre"><EditBook /></Template>} />
+                <Route path="/loans/new" element={<Template userT={userT} page="Emprunter un livre"><AddLoan /></Template>} />
+                <Route path="/loans/myloans" element={<Template userT={userT} page="Mes emprunts"><MyLoans /></Template>} />
             </Routes>
         </Router>
     );

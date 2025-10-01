@@ -47,6 +47,7 @@ const BookList = () => {
                             <th>Date de publication</th>
                             <th>Statut</th>
                             <th>Détails</th>
+                            <th>Détails</th>
                         </tr>
                     </thead>
                     <tbody>

@@ -55,6 +55,8 @@ const Sidebar = ({userT}) => {
                         <li>Bonjour {user.email}</li>
                         <li style={{textAlign: 'right'}}><i>{user.role}</i></li>
                         <li><Link to="/books">Voir la liste des livres</Link></li>
+                        <li><Link to="/loans/new">Emprunter un livre</Link></li>
+                        <li><Link to="/loans/myloans">Livres empruntés</Link></li>
                         <li><Link to="/profile">Mon profil</Link></li>
                         <li><button onClick={handleLogout}>Déconnexion</button></li>
                     </>
